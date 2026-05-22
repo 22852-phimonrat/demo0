@@ -60,4 +60,73 @@
             width: 120px;
             height: 120px;
             background-color: #ffffff;
-            border-radius: 50
+            border-radius: 50%;
+            border: 4px solid #ffffff;
+            box-shadow: 0 5px 15px rgba(255, 117, 140, 0.3);
+            position: relative;
+            z-index: 1;
+            margin: 0 auto 15px auto;
+            object-fit: cover;
+        }
+
+        /* สไตล์สำหรับข้อมูลต่างๆ */
+        .profile-info {
+            position: relative;
+            z-index: 1;
+        }
+
+        .profile-info h1 {
+            font-size: 24px;
+            color: var(--text-color);
+            margin: 10px 0 5px 0;
+        }
+
+        .profile-info h2 {
+            font-size: 16px;
+            color: var(--secondary-color);
+            font-weight: 400;
+            margin: 0 0 20px 0;
+        }
+
+        .details {
+            text-align: left;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px dashed #ffb6c1;
+        }
+
+        .details p {
+            margin: 12px 0;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .details i {
+            color: var(--primary-color);
+            width: 30px;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="รูปโปรไฟล์น้องสตางค์" class="profile-image">
+        
+        <div class="profile-info">
+            <h1>น้องสตางค์</h1>
+            <h2>นักเรียน</h2>
+            
+            <div class="details">
+                <p><i class="fa-solid fa-flask"></i> <strong>วิชาที่ชอบ:</strong> วิทยาศาสตร์</p>
+                <p><i class="fa-solid fa-palette"></i> <strong>งานอดิเรก:</strong> วาดรูป, ฟังเพลง</p>
+                <p><i class="fa-solid fa-user-group"></i> <strong>เพื่อนสนิท:</strong> เอ๋ตุ้ย</p>
+                <p><i class="fa-solid fa-star"></i> <strong>ความใฝ่ฝัน:</strong> นักวิทยาศาสตร์</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
